@@ -1,0 +1,8 @@
+API:
+1. Đăng ký user (đăng kí bằng sđt, fullname, avartar, password, giới tính)
+2. Đăng nhập (Số điện thoại, mật khẩu)
+3. Tìm kiếm user theo số điện thoại.
+4. Gửi lời mời kết bạn (status bằng 1 là gửi lời mời r nhưng chưa chap nhận, bằng 2 là đang là bạn bè)
+5. Chấp nhận kết bạn (chuyển status bằng 2)
+6. Lấy danh sách chat_rooms của mình(user đang đăng nhập) có tham gia
+7. Lấy danh sách bạn bè của mình
