@@ -21,4 +21,16 @@ public class UserServiceImpl implements IUserService {
         userRepositoty.save(userEntity);
     }
 
+    @Override
+    public UserEntity findUserEntityByUserName(String username) {
+        return userRepositoty.findUserEntityByUserName(username);
+    }
+    @Override
+    public UserEntity findUserEntityByPhone(String phone) {
+        return userRepositoty.findUserEntityByPhone(phone);
+    }
+
+
+
+
 }

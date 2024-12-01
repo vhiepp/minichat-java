@@ -2,10 +2,19 @@ package mini.chat.minichat.dto;
 
 public class UserCreateDTO {
     private String fullname;
+    private String userName;
     private String avartar;
     private String phone;
     private String password;
     private int gender;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     public String getFullname() {
         return fullname;

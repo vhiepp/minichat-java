@@ -6,5 +6,7 @@ import mini.chat.minichat.repository.entity.UserEntity;
 
 public interface IUserService {
     void createUser(UserCreateDTO userCreateDTO);
+    UserEntity findUserEntityByUserName(String username);
+    UserEntity findUserEntityByPhone(String username);
 
 }

@@ -11,20 +11,29 @@ public class UserEntity {
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
 
-        @Column(nullable = false)
+        @Column(nullable = true)
         private String fullname;
+
+        @Column(nullable = true, unique = true)
+        private String userName;
 
         @Column(nullable = true)
         private String avartar;
 
-        @Column(nullable = false, unique = true)
+        @Column(nullable = true, unique = true)
         private String phone;
 
-        @Column(nullable = false)
+        @Column(nullable = true)
         private String password;
 
-        @Column(nullable = false, columnDefinition = "TINYINT DEFAULT 3")
+        @Column(nullable = true, columnDefinition = "TINYINT DEFAULT 3")
         private int gender;
+
+        public UserEntity() {
+        }
+        public UserEntity(Long id,String userName) {
+            this.userName = userName;
+        }
 
         @OneToMany(mappedBy = "user")
         private Set<ChatMessageEntity> chatMessages;
@@ -117,4 +126,12 @@ public class UserEntity {
         public void setUserFriendsTwo(Set<UserFriendEntity> userFriendsTwo) {
             this.userFriendsTwo = userFriendsTwo;
         }
-    }
+
+        public String getUserName() {
+            return userName;
+        }
+
+        public void setUserName(String userName) {
+            this.userName = userName;
+        }
+}
