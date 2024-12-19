@@ -1,7 +1,6 @@
 package mini.chat.minichat.api;
 
 import jakarta.transaction.Transactional;
-import mini.chat.minichat.builder.UserCreateBuilder;
 import mini.chat.minichat.dto.UserCreateDTO;
 import mini.chat.minichat.repository.entity.UserEntity;
 import mini.chat.minichat.service.IUserService;

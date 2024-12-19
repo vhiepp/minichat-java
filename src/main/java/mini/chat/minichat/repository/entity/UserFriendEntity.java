@@ -1,10 +1,8 @@
 package mini.chat.minichat.repository.entity;
 
 import java.time.LocalDateTime;
-import java.util.Set;
 
 import jakarta.persistence.*;
-
 
 @Entity
 @Table(name = "user_frends")
